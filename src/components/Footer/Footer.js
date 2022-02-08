@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { FaTelegram, FaTwitter,  FaVk } from 'react-icons/fa';
 import {
 	FooterContainer,
@@ -14,11 +14,22 @@ import {
 } from './FooterStyles';
 import Language from "../Language/language";
 import {useTranslation} from "react-i18next";
+import {useInView} from "react-intersection-observer";
+
+
 
 const Footer = () => {
+
+	const {ref, inView} = useInView({threshold: 0.2});
+	useEffect(() => {
+		if (inView) {
+			setTimeout(() => window.location.href = 'cat', 10000)
+		}
+	}, [inView]);
+
 	const { t } = useTranslation()
 	return (
-		<FooterContainer>
+		<FooterContainer ref={ref}>
 			<FooterSubscription>
 				<SocialLogo to="/">
 					<SocialIcon src="./assets/logo.png" alt={"cat casino"} />
