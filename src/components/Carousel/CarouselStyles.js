@@ -16,8 +16,8 @@ export const CarouselImage = styled(motion.img)`
 `;
 
 export const ImageWrapper = styled(motion.div)`
-  max-width: 320px;
-  min-width: 320px;
+  max-width: 300px;
+  min-width: 300px;
   background: rgb(12, 12, 12, 0.8);
   display: flex !important;
   -webkit-box-shadow: 0px 5px 10px 2px rgba(75, 0, 130, 0.2);
@@ -31,8 +31,9 @@ export const ImageWrapper = styled(motion.div)`
   border-radius: 10px;
   outline: none;
   height: 400px;
-  @media screen and (min-width: 340px) {
+  @media screen and (min-width: 300px) {
     border: 2px solid #e865e8;
+    margin: 0 auto;
   }
 `;
 
