@@ -177,6 +177,7 @@ export const Column = styled.div`
   min-height: ${({minHeight}) => (minHeight ? minHeight : 'auto')};
 `;
 
+
 export const Button = styled.button`
   border-radius: 4px;
   background: none;
@@ -207,6 +208,43 @@ export const Button = styled.button`
   &:hover:before {
     height: 500%;
     background: #A856DE;
+  }
+
+  &:hover {
+    color: white;
+  }
+`;
+
+export const ButtonBrand = styled.button`
+  border-radius: 4px;
+  background: none;
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ff0000;
+  outline: none;
+  border: 1px solid #fc0000;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    background: none;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:hover:before {
+    height: 500%;
+    background: #ff0000;
   }
 
   &:hover {

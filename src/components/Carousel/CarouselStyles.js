@@ -37,6 +37,28 @@ export const ImageWrapper = styled(motion.div)`
   }
 `;
 
+export const ImageWrapperBrand = styled(motion.div)`
+  max-width: 300px;
+  min-width: 300px;
+  background: rgb(12, 12, 12, 0.8);
+  display: flex !important;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(75, 0, 130, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(75, 0, 130, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(75, 0, 130, 0.2);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  outline: none;
+  height: 400px;
+  @media screen and (min-width: 300px) {
+    border: 2px solid #fc0000;
+    margin: 0 auto;
+  }
+`;
+
 export const TextDesc = styled(motion.p)`
   margin: 0 10px;
   color: #ffffff;

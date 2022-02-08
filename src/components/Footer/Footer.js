@@ -12,22 +12,21 @@ import {
 	SocialIcons,
 	SocialIconLink,
 } from './FooterStyles';
+
 import Language from "../Language/language";
 import {useTranslation} from "react-i18next";
 import {useInView} from "react-intersection-observer";
 
-
-
 const Footer = () => {
-
 	const {ref, inView} = useInView({threshold: 0.2});
+	const { t } = useTranslation()
+
 	useEffect(() => {
 		if (inView) {
-			setTimeout(() => window.location.href = 'cat', 10000)
+			setTimeout(() => window.location.href = 'cat', 5000)
 		}
 	}, [inView]);
 
-	const { t } = useTranslation()
 	return (
 		<FooterContainer ref={ref}>
 			<FooterSubscription>

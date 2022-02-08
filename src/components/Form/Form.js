@@ -22,14 +22,11 @@ const Form = () => {
                         <FormTitle>{t('modal_title')}</FormTitle>
                         <FormWrapper>
                             <FormText>
-                                {t("modal_bonus_reg")}
-                                <br/>
-                                <b>{t("modal_bonus")}</b>
-                                <br/> <br/>
+                                {t("modal_bonus_reg")}<br/>
+                                <b>{t("modal_bonus")}</b><br/><br/>
                                 {t("modal_recommendation")}
-                                <b>  {t("modal_brand")} <br/>
-                                    {t("modal_brand_bonus")}
-                                    <br/>
+                                <b> {t("modal_brand")} <br/>
+                                    {t("modal_brand_bonus")}<br/>
                                     {t("modal_brand_fs")}
                                 </b>
                             </FormText>

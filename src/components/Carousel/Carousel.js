@@ -2,24 +2,24 @@ import React, {useEffect, useState} from 'react';
 import {FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
 import {IconContext} from 'react-icons';
 
-import {Row, Heading, Section, TextWrapper, MainHeading, Button, MainHead} from '../../styleGlobal';
+import {Row, Heading, Section, TextWrapper, MainHeading, Button, MainHead, ButtonBrand} from '../../styleGlobal';
 import {
     ButtonContainer,
     ReviewSlider,
     ImageWrapper,
     CarouselImage,
     CardButton,
-    TextDesc,
+    TextDesc, ImageWrapperBrand,
 } from './CarouselStyles';
 
 import {
     ButtonWrapper,
     HeroButton,
     HeroSection,
-    HeroText,
+    HeroText, HeroTextBrand,
     HeroVideo, MainHeadings,
     Progress,
-    Stars
+    Stars, StarsBrand
 } from "./HeroStyles";
 
 import {Link} from 'react-router-dom';
@@ -86,7 +86,7 @@ const Carousel = () => {
                 <HeroVideo src='./assets/h2.mp4' autoPlay loop muted/>
                 <Section id="site" margin="-80px auto" maxWidth="1280px" padding="0 30px" inverse>
                     <ReviewSlider {...sliderSettings} ref={setSliderRef}>
-
+{/*brandCard##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}
@@ -124,7 +124,7 @@ const Carousel = () => {
                                 </ButtonWrapper>
 
                         </ImageWrapper>
-
+                        {/*brandStat##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}
@@ -158,18 +158,18 @@ const Carousel = () => {
                                 </Link>
                             </ButtonWrapper>
                         </ImageWrapper>
-
-                        <ImageWrapper
+                        {/*brandCard2d##########################################################################*/}
+                        <ImageWrapperBrand
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}
                             animate={animation}
                         >
                             <MainHeadings> {t('brand_two').toUpperCase()} </MainHeadings>
-                            <HeroText>
+                            <HeroTextBrand>
                                 {t('brand_card_two_rtp')}<br/>
                                 {t('brand_card_two_bonus')}
-                            </HeroText>
-                            <Stars
+                            </HeroTextBrand>
+                            <StarsBrand
                                 initial={carousel}
                                 transition={{delay: 0.5, duration: 0.8}}
                                 animate={animation}
@@ -180,23 +180,23 @@ const Carousel = () => {
                                     size={50}
                                     fillColor={'#ff0000'}
                                 />
-                            </Stars>
-                            <HeroText>
+                            </StarsBrand>
+                            <HeroTextBrand>
                                 {t('brand_card_two_span')}
-                            </HeroText>
+                            </HeroTextBrand>
                             <ButtonWrapper
                                 initial={carousel}
                                 transition={{delay: 0.5, duration: 0.8}}
                                 animate={animation}
                             >
                                 <Link to='vavada'>
-                                    <Button>
+                                    <ButtonBrand>
                                         {t('brand_card_two_btn')}
-                                    </Button>
+                                    </ButtonBrand>
                                 </Link>
                             </ButtonWrapper>
-                        </ImageWrapper>
-
+                        </ImageWrapperBrand>
+                        {/*slideCard1##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}
@@ -232,7 +232,7 @@ const Carousel = () => {
                             </Link>
                         </ImageWrapper>
 
-
+                        {/*slideCard2##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}
@@ -267,6 +267,8 @@ const Carousel = () => {
                                 >  {t('slide_btn_two')} </CardButton>
                             </Link>
                         </ImageWrapper>
+
+                        {/*slideCard3##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}
@@ -301,7 +303,7 @@ const Carousel = () => {
                                 >   {t('slide_btn_three')} </CardButton>
                             </Link>
                         </ImageWrapper>
-
+                        {/*slideCard4##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}
@@ -336,7 +338,7 @@ const Carousel = () => {
                                 >   {t('slide_btn_four')} </CardButton>
                             </Link>
                         </ImageWrapper>
-
+                        {/*slideCard5##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}
@@ -371,7 +373,7 @@ const Carousel = () => {
                                 >   {t('slide_btn_five')} </CardButton>
                             </Link>
                         </ImageWrapper>
-
+                        {/*slideCard6##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}
@@ -406,7 +408,7 @@ const Carousel = () => {
                                 >   {t('slide_btn_six')} </CardButton>
                             </Link>
                         </ImageWrapper>
-
+                        {/*slideCard7##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
                             transition={{delay: 0.1, duration: 2}}

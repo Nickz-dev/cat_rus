@@ -52,9 +52,39 @@ export const HeroText = styled.p`
   -webkit-box-orient: vertical;
   box-orient: vertical;
 `;
+export const HeroTextBrand = styled.p`
+  margin-bottom: 35px;
+  font-size: clamp(0.9rem, 1vw, 1.3rem);
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ff0000;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -ms-line-clamp: 2;
+  -webkit-line-clamp: 2;
+  line-clamp: 1;
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+`
 export const Stars = styled(motion.div)`
   width: 100%;
-  color: #e865e8;
+  color: #ff00ff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 35px;
+  align-items: center;
+  height: 60px;
+`
+export const StarsBrand = styled(motion.div)`
+  width: 100%;
+  color: #ff0000;
   padding: 5px;
   display: flex;
   justify-content: center;
