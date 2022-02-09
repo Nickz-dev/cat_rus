@@ -23,7 +23,7 @@ export const HeroVideo = styled.video`
 `;
 
 export const MainHeadings = styled(motion.h2)`
-  font-size: clamp(2.2rem, 2vw, 4rem);
+  font-size: clamp(1.6rem, 1.5vw, 4rem);
   font-weight: bold;
   margin-bottom: 2rem;
   color: ${({inverse}) => (inverse ? '$403ae3' : '#fc0000')};
@@ -113,7 +113,7 @@ export const HeroButton = styled(Button)`
   margin-top: 15px;
 
   &:before {
-    background: #4b0082;
+    background: #0c0c0c;
     height: 500%;
   }
 

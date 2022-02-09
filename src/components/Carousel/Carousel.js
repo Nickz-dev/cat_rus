@@ -36,6 +36,7 @@ const Carousel = () => {
     const [sliderRef, setSliderRef] = useState(null);
     const initial = {opacity: 0, y: 50};
     const carousel = {opacity: 0};
+    const btn = {opacity: 0, y:30};
     const animation = useAnimation();
     const {ref, inView} = useInView({threshold: 0.5});
     const [showModal, setShowModal] = useState(false);
@@ -113,7 +114,7 @@ const Carousel = () => {
                                     {t('brand_card_span')}
                                 </HeroText>
                                 <ButtonWrapper
-                                    initial={carousel}
+                                    initial={btn}
                                     transition={{delay: 0.3, duration: 1.7}}
                                     animate={animation}
                                 >
@@ -149,7 +150,7 @@ const Carousel = () => {
                                 <Line percent="50" strokeWidth="4" strokeColor="#ffc407"/>
                             </Progress>
                             <ButtonWrapper
-                                initial={carousel}
+                                initial={btn}
                                 transition={{delay: 0.7, duration: 1.4}}
                                 animate={animation}
                             >
@@ -185,8 +186,8 @@ const Carousel = () => {
                                 {t('brand_card_two_span')}
                             </HeroTextBrand>
                             <ButtonWrapper
-                                initial={carousel}
-                                transition={{delay: 0.5, duration: 0.8}}
+                                initial={btn}
+                                transition={{delay: 1.2, duration: 0.8}}
                                 animate={animation}
                             >
                                 <Link to='vavada'>

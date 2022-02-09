@@ -85,7 +85,7 @@ export const Container = styled.div`
   }
 `;
 export const MainHeading = styled.h1`
-  font-size: clamp(2.2rem, 2vw, 4rem);
+  font-size: clamp(1.6rem, 1.5vw, 4rem);
   font-weight: bold;
   margin-bottom: 2rem;
   color: ${({inverse}) => (inverse ? '$403ae3' : '#FF0BFF')};
@@ -94,7 +94,7 @@ export const MainHeading = styled.h1`
   text-align: center;
 `;
 export const MainHead = styled.h2`
-  font-size: clamp(2.2rem, 2vw, 4rem);
+  font-size: clamp(1.6rem, 1.5vw, 4rem);
   font-weight: bold;
   font-weight: bold;
   margin-bottom: 2rem;
