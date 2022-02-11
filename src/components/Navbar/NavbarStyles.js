@@ -74,6 +74,7 @@ export const NavMenu = styled.ul`
 		flex-direction: column;
 		width: 100%;
 		height: 100vh;
+		margin-top: 0;
 		position: fixed;
 		padding-top: 30%;
 		top: 0;
