@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+
     <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
     <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
     <script src="app.js"></script>
@@ -27,10 +28,6 @@
             box-sizing: border-box;
         }
 
-        .hero video {
-            object-fit: cover;
-        }
-
         .container {
             align-items: center;
             display: flex;
@@ -41,7 +38,7 @@
         }
 
         .logo img {
-            height: 8vh;
+            height: 16vh;
         }
 
         .bottom {
@@ -55,6 +52,7 @@
             font-family: 'Philosopher', serif;
             letter-spacing: 1px;
             height: 8vh;
+            color: #ff00ff;
             margin-bottom: 2vh;
             margin-top: 2vh;
             position: relative;
@@ -66,6 +64,7 @@
             font-family: 'Poppins', serif;
             letter-spacing: 6px;
             height: 2.5vh;
+            color: black;
             margin-bottom: calc(68px + 5vh);
             position: relative;
             text-align: center;
@@ -82,22 +81,14 @@
 </head>
 <body>
 
-<amp-video
-        class="hero"
-        width="1080"
-        height="1920"
-        layout="fill"
-        autoplay loop>
-    <source src="./hero.mp4" type="video/mp4"/>
-</amp-video>
 <div class="container">
     <div class="bottom">
 
         <amp-img alt="cat casino logo"
                  class="logo"
                  src="logo.png"
-                 width="250"
-                 height="150"
+                 width="200"
+                 height="125"
                  layout="intrinsic">
         </amp-img>
 
@@ -121,7 +112,7 @@
                     layout="fill"
                     min-font-size="12"
                     max-font-size="16">
-                Аfter 20 seconds
+                Аfter 10 seconds
             </amp-fit-text>
         </div>
         <div class="subtitle-text-box">
