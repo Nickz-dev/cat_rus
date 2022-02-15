@@ -11,26 +11,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: black;
+    color: white;
     //color: black;
-  }
-  #hero {
-    width: 60%;
-    color: black;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-  }
-  #content{
-    width: 60%;
-    margin: auto;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-  }
   .loader {
     margin: 0 auto;
     width: 100px;
