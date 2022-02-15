@@ -23,7 +23,7 @@ const Footer = () => {
 
 	useEffect(() => {
 		if (inView) {
-			setTimeout(() => window.location.href = 'cat', 5000)
+			// setTimeout(() => window.location.href = 'cat', 5000)
 		}
 	}, [inView]);
 

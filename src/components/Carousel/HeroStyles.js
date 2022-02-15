@@ -73,7 +73,7 @@ export const HeroTextBrand = styled.p`
 `
 export const Stars = styled(motion.div)`
   width: 100%;
-  color: #ff00ff;
+  color: #FE00FE;
   padding: 5px;
   display: flex;
   justify-content: center;
