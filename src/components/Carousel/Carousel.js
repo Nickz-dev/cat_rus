@@ -169,7 +169,8 @@ const Carousel = () => {
                             <MainHeadings> {t('brand_two').toUpperCase()} </MainHeadings>
                             <HeroTextBrand>
                                 {t('brand_card_two_rtp')}<br/>
-                                {t('brand_card_two_bonus')}
+                                {t('brand_card_two_bonus')}<br/>
+                                {t('brand_card_two_desc')}
                             </HeroTextBrand>
                             <StarsBrand
                                 initial={carousel}
