@@ -3,6 +3,7 @@ import {useTranslation} from 'react-i18next'
 import i18next from 'i18next'
 import cookies from 'js-cookie'
 import classNames from 'classnames'
+import {Link} from "react-router-dom";
 
 const languages = [
     {
@@ -61,8 +62,8 @@ export default function Language() {
                         </li>
                         {languages.map(({code, name, country_code}) => (
                             <li key={country_code}>
-                                <a
-                                    href="#"
+                                <Link
+                                    to={code}
                                     className={classNames('dropdown-item', {
                                         disabled: currentLanguageCode === code,
                                     })}
@@ -77,7 +78,7 @@ export default function Language() {
                         }}
                     ></span>
                                     {name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
