@@ -16,9 +16,6 @@ import Vavada from "./components/Vavada/Vavada";
 
 
 
-
-
-
 export default function App() {
     return (
         <>
