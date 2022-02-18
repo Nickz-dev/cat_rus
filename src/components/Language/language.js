@@ -15,52 +15,6 @@ const languages = [
         name: 'English',
         country_code: 'gb',
     },
-    // {
-    //     code: 'ca',
-    //     name: 'Canada',
-    //     country_code: 'ca',
-    // },
-    // {
-    //     code: 'fi',
-    //     name: 'Finnish',
-    //     country_code: 'fi',
-    // },
-    // {
-    //     code: 'no',
-    //     name: 'Norwegian',
-    //     country_code: 'no',
-    // },
-    // {
-    //     code: 'de',
-    //     name: 'German',
-    //     country_code: 'de',
-    // },
-    // {
-    //     code: 'ga',
-    //     name: 'Irish',
-    //     country_code: 'ga',
-    // },
-    // {
-    //     code: 'sk',
-    //     name: 'Slovakh',
-    //     country_code: 'sk',
-    // },
-    // {
-    //     code: 'sl',
-    //     name: 'Slovenian',
-    //     country_code: 'sl',
-    // },
-    // {
-    //     code: 'kz',
-    //     name: 'Kazakh',
-    //     country_code: 'kz',
-    // },
-    // {
-    //     code: 'ar',
-    //     name: 'العربية',
-    //     dir: 'rtl',
-    //     country_code: 'sa',
-    // },
 ]
 
 const GlobeIcon = ({width = 24, height = 24}) => (
@@ -128,10 +82,6 @@ export default function Language() {
                         ))}
                     </ul>
                 </div>
-            </div>
-            <div className="d-flex flex-column align-items-start">
-                <h1 className="font-weight-normal mb-3">{t('welcome_message')}</h1>
-                <p>{t('days_since_release')}</p>
             </div>
         </div>
     )
