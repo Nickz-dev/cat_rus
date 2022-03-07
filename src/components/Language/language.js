@@ -33,7 +33,7 @@ const GlobeIcon = ({width = 24, height = 24}) => (
 )
 
 export default function Language() {
-    const currentLanguageCode = cookies.get('i18next') || 'ru'
+    const currentLanguageCode = cookies.get('i18next') || 'en'
     const currentLanguage = languages.find((l) => l.code === currentLanguageCode)
     const {t} = useTranslation()
 
