@@ -63,7 +63,7 @@ export default function Language() {
                         {languages.map(({code, name, country_code}) => (
                             <li key={country_code}>
                                 <Link
-                                    to={code}
+                                    to='#'
                                     className={classNames('dropdown-item', {
                                         disabled: currentLanguageCode === code,
                                     })}
