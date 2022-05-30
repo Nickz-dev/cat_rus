@@ -2,24 +2,24 @@ import React, {useEffect, useState} from 'react';
 import {FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
 import {IconContext} from 'react-icons';
 
-import {Row, Heading, Section, TextWrapper, MainHeading, Button, MainHead, ButtonBrand} from '../../styleGlobal';
+import {Row, Heading, Section, TextWrapper, MainHeading,  MainHead, } from '../../styleGlobal';
 import {
     ButtonContainer,
     ReviewSlider,
     ImageWrapper,
     CarouselImage,
     CardButton,
-    TextDesc, ImageWrapperBrand,
+    TextDesc,
 } from './CarouselStyles';
 
 import {
     ButtonWrapper,
     HeroButton,
     HeroSection,
-    HeroText, HeroTextBrand,
-    HeroVideo, MainHeadings,
+    HeroText,
+    HeroVideo,
     Progress,
-    Stars, StarsBrand
+    Stars,
 } from "./HeroStyles";
 
 import {Link} from 'react-router-dom';
