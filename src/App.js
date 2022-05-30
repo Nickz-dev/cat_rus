@@ -25,14 +25,9 @@ export default function App() {
                 <Navbar/>
                 <Routes>
                     <Route index element={<Home/>}/>
-                    <Route path="/ru" element={<Home/>}/>
-                    <Route path="/en" element={<Home/>}/>
                     <Route path="/cat" element={<Casino/>}/>
                     <Route path="/vavada" element={<Vavada/>}/>
-                    <Route
-                        path="*"
-                        element={<Casino/>}
-                    />
+                    <Route path="/#" element={<Home/>}/>
                 </Routes>
                 <Footer/>
             < /BrowserRouter>

@@ -119,10 +119,12 @@ const Carousel = () => {
                                     transition={{delay: 0.3, duration: 1.7}}
                                     animate={animation}
                                 >
-
-                                    <Button onClick={toggleModal} className={'corner'}>
-                                        {t('brand_card_btn')}
-                                    </Button>
+                                    <Link to='cat'>
+                                        <HeroButton>{t('brand_card_btn')}</HeroButton>
+                                    </Link>
+                                    {/*<Button onClick={toggleModal} className={'corner'}>*/}
+                                    {/*    {t('brand_card_btn')}*/}
+                                    {/*</Button>*/}
                                 </ButtonWrapper>
 
                         </ImageWrapper>
@@ -161,44 +163,44 @@ const Carousel = () => {
                             </ButtonWrapper>
                         </ImageWrapper>
                         {/*brandCard2d##########################################################################*/}
-                        <ImageWrapperBrand
-                            initial={carousel}
-                            transition={{delay: 0.1, duration: 2}}
-                            animate={animation}
-                        >
-                            <MainHeadings> {t('brand_two').toUpperCase()} </MainHeadings>
-                            <HeroTextBrand>
-                                {t('brand_card_two_rtp')}<br/>
-                                {t('brand_card_two_bonus')}<br/>
-                                {t('brand_card_two_desc')}
-                            </HeroTextBrand>
-                            <StarsBrand
-                                initial={carousel}
-                                transition={{delay: 0.5, duration: 0.8}}
-                                animate={animation}
-                            >
-                                {t('brand_card_two_rating')}
-                                <Rating
-                                    ratingValue='93'
-                                    size={50}
-                                    fillColor={'#ff0000'}
-                                />
-                            </StarsBrand>
-                            <HeroTextBrand>
-                                {t('brand_card_two_span')}
-                            </HeroTextBrand>
-                            <ButtonWrapper
-                                initial={btn}
-                                transition={{delay: 1.2, duration: 0.8}}
-                                animate={animation}
-                            >
-                                <Link to='vavada'>
-                                    <ButtonBrand>
-                                        {t('brand_card_two_btn')}
-                                    </ButtonBrand>
-                                </Link>
-                            </ButtonWrapper>
-                        </ImageWrapperBrand>
+                        {/*<ImageWrapperBrand*/}
+                        {/*    initial={carousel}*/}
+                        {/*    transition={{delay: 0.1, duration: 2}}*/}
+                        {/*    animate={animation}*/}
+                        {/*>*/}
+                        {/*    <MainHeadings> {t('brand_two').toUpperCase()} </MainHeadings>*/}
+                        {/*    <HeroTextBrand>*/}
+                        {/*        {t('brand_card_two_rtp')}<br/>*/}
+                        {/*        {t('brand_card_two_bonus')}<br/>*/}
+                        {/*        {t('brand_card_two_desc')}*/}
+                        {/*    </HeroTextBrand>*/}
+                        {/*    <StarsBrand*/}
+                        {/*        initial={carousel}*/}
+                        {/*        transition={{delay: 0.5, duration: 0.8}}*/}
+                        {/*        animate={animation}*/}
+                        {/*    >*/}
+                        {/*        {t('brand_card_two_rating')}*/}
+                        {/*        <Rating*/}
+                        {/*            ratingValue='93'*/}
+                        {/*            size={50}*/}
+                        {/*            fillColor={'#ff0000'}*/}
+                        {/*        />*/}
+                        {/*    </StarsBrand>*/}
+                        {/*    <HeroTextBrand>*/}
+                        {/*        {t('brand_card_two_span')}*/}
+                        {/*    </HeroTextBrand>*/}
+                        {/*    <ButtonWrapper*/}
+                        {/*        initial={btn}*/}
+                        {/*        transition={{delay: 1.2, duration: 0.8}}*/}
+                        {/*        animate={animation}*/}
+                        {/*    >*/}
+                        {/*        <Link to='vavada'>*/}
+                        {/*            <ButtonBrand>*/}
+                        {/*                {t('brand_card_two_btn')}*/}
+                        {/*            </ButtonBrand>*/}
+                        {/*        </Link>*/}
+                        {/*    </ButtonWrapper>*/}
+                        {/*</ImageWrapperBrand>*/}
                         {/*slideCard1##########################################################################*/}
                         <ImageWrapper
                             initial={carousel}
