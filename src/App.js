@@ -12,7 +12,7 @@ import ScrollToTop from "./scrollToTop";
 import Home from "./page/Home";
 import Footer from "./components/Footer/Footer";
 import Casino from "./components/Casino/Casino";
-import Vavada from "./components/Vavada/Vavada";
+// import Vavada from "./components/Vavada/Vavada";
 
 
 
@@ -26,7 +26,7 @@ export default function App() {
                 <Routes>
                     <Route index element={<Home/>}/>
                     <Route path="/cat" element={<Casino/>}/>
-                    <Route path="/vavada" element={<Vavada/>}/>
+                    {/*<Route path="/vavada" element={<Vavada/>}/>*/}
                     <Route path="/#" element={<Home/>}/>
                 </Routes>
                 <Footer/>
