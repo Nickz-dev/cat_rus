@@ -110,7 +110,7 @@ export const ButtonWrapper = styled(motion.div)`
 
 export const HeroButton = styled(Button)`
   color: #e865e8;
-  //margin-top: 15px;
+  margin-top: 15px;
 
   &:before {
     background: #0c0c0c;

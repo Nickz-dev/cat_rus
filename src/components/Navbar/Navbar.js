@@ -66,12 +66,12 @@ const Navbar = () => {
                                     {t('menu_home')}
                                 </NavLinks>
                             </NavItem>
-                            {/*<NavItem>*/}
-                            {/*    <NavLinks onClick={() => closeMobileMenu("vavada" )}>*/}
-                            {/*        {t('menu_vavada')}*/}
-                            {/*    </NavLinks>*/}
+                            <NavItem>
+                                <NavLinks onClick={() => closeMobileMenu("vavada" )}>
+                                    {t('menu_vavada')}
+                                </NavLinks>
 
-                            {/*</NavItem>*/}
+                            </NavItem>
                             <NavItem>
 
                                 <NavLinks onClick={() => closeMobileMenu("cat" )}>

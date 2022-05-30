@@ -2,24 +2,24 @@ import React, {useEffect, useState} from 'react';
 import {FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
 import {IconContext} from 'react-icons';
 
-import {Row, Heading, Section, TextWrapper, MainHeading,  MainHead, } from '../../styleGlobal';
+import {Row, Heading, Section, TextWrapper, MainHeading, Button, MainHead, ButtonBrand} from '../../styleGlobal';
 import {
     ButtonContainer,
     ReviewSlider,
     ImageWrapper,
     CarouselImage,
     CardButton,
-    TextDesc,
+    TextDesc, ImageWrapperBrand,
 } from './CarouselStyles';
 
 import {
     ButtonWrapper,
     HeroButton,
     HeroSection,
-    HeroText,
-    HeroVideo,
+    HeroText, HeroTextBrand,
+    HeroVideo, MainHeadings,
     Progress,
-    Stars,
+    Stars, StarsBrand
 } from "./HeroStyles";
 
 import {Link} from 'react-router-dom';
@@ -120,11 +120,11 @@ const Carousel = () => {
                                     animate={animation}
                                 >
                                     <Link to='cat'>
-                                        <HeroButton>{t('brand_card_btn')}</HeroButton>
+                                        <HeroButton>{t('scores_btn')}</HeroButton>
                                     </Link>
-                                    {/*<Button onClick={toggleModal} className={'corner'}>*/}
-                                    {/*    {t('brand_card_btn')}*/}
-                                    {/*</Button>*/}
+                                    <Button onClick={toggleModal} className={'corner'}>
+                                        {t('brand_card_btn')}
+                                    </Button>
                                 </ButtonWrapper>
 
                         </ImageWrapper>
